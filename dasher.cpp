@@ -37,7 +37,7 @@ int main() {
     //nebula
     Texture2D nebula = LoadTexture("textures/12_nebula_spritesheet.png");
 
-    const int sizeOfNebulae = 3;
+    const int sizeOfNebulae = 5;
     AnimData nebulae[sizeOfNebulae]{};
 
     for(int i = 0; i < sizeOfNebulae; i++) {
@@ -45,14 +45,14 @@ int main() {
         nebulae[i].rec.y = 0;
         nebulae[i].rec.width = nebula.width/8;
         nebulae[i].rec.height = nebula.height/8;
-        nebulae[i].pos.x = windowDimensions[0] + (i * 300);
+        nebulae[i].pos.x = windowDimensions[0]*2 + (i * 300);
         nebulae[i].pos.y = windowDimensions[1] - nebula.height/8;
         nebulae[i].frame = 0;
         nebulae[i].runningTime = 0.0;
         nebulae[i].updateTime = 1.0/16.0;
     }
 
-    float finishLine = nebulae[sizeOfNebulae - 1].pos.x;
+    float finishLine = nebulae[sizeOfNebulae - 1].pos.x + 300;
 
     int nebVel = -200;
 
