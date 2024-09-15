@@ -14,4 +14,4 @@ Space bar to jump.
 Build instructions:
 ------------
 Download the raylib library from https://www.raylib.com/  
-Download a C++ compiler(preferably an IDE, Visual Studio Code was used to make the project) and run dasher.cpp.d
+Download a C++ compiler(preferably an IDE, Visual Studio Code was used to make the project) and run dasher.cpp
